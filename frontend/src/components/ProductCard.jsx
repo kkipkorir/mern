@@ -14,7 +14,7 @@ const ProductCard = ({product}) => {
     const textColor = useColorModeValue("gray.600", "gray.200");
     const bg = useColorModeValue("white", "gray.800");
 
-    const deleteProduct = useProductStore();
+    const {deleteProduct} = useProductStore();
     const toast = useToast();
 
     const handleDelete = async (pid)=>{
